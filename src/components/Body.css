@@ -1,0 +1,38 @@
+/* Body.css (or use a CSS-in-JS solution) */
+.body-container {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.drop-zone {
+  border: 2px dashed black;
+  width: 600px;
+  height: 300px;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 10 10px 10px 2px rgba(234, 7, 7, 0.2);
+}
+
+.file-input-label {
+    border: 2px solid black;
+    width: 15%;
+    padding: 5px;
+    cursor: pointer;
+}
+
+button{
+    color: white;
+    background-color: #f21212;
+    font-weight: bold;
+    font-size: 15px;
+    width: 10%;
+    position: absolute;
+    bottom: 25%;
+    right: 26%;
+    cursor: pointer;
+}

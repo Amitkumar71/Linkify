@@ -1,0 +1,12 @@
+.branding{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    color: white;
+    background-color: black;
+  }
+
+.branding p {
+  margin-left: 2%;
+}
