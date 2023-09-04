@@ -1,12 +1,9 @@
 import React, { useState } from 'react';
-import './Body.css';
-import Room from './Room';
+import './Room.css';
 
-const Body = () => {
+const Room = () => {
   const [dragging, setDragging] = useState(false);
   const [droppedFile, setDroppedFile] = useState(null);
-  const [showRoom, setShowRoom] = useState(false);
-  const [isCreateMode, setIsCreateMode] = useState(true); // State to track whether we are in Create or Delete mode
 
   const handleDragEnter = (e) => {
     e.preventDefault();
@@ -31,6 +28,7 @@ const Body = () => {
   };
 
   const handleFileInputClick = () => {
+    // Trigger the file input when the drag zone is clicked
     document.getElementById('fileInput').click();
   };
 
@@ -43,23 +41,13 @@ const Body = () => {
     return file && file.type.startsWith('image/');
   };
 
-  const handleClear = () => {
+  const handleclear = () => {
     setDroppedFile(null);
-  };
-
-  const handleToggleMode = () => {
-    if (isCreateMode) {
-      setShowRoom(true);
-    } else {
-      setShowRoom(false);
-      setDroppedFile(null); // Clear the dropped file when deleting the room
-    }
-    setIsCreateMode(!isCreateMode);
   };
 
   return (
     <div className="body-container">
-      <h2>Drop your content here</h2>
+      <h2>Second Space</h2>
       <div
         className={`drop-zone ${dragging ? 'dragging' : ''}`}
         onDragEnter={handleDragEnter}
@@ -102,14 +90,9 @@ const Body = () => {
           id="fileInput"
         />
       </div>
-      <button onClick={handleClear}>Clear</button>
-      <button className="create-room-btn" onClick={handleToggleMode}>
-        {isCreateMode ? 'Create Room' : 'Delete Room'}
-      </button>
-
-      {showRoom && <Room />} {/* Conditionally render the Room component */}
+      <button className="clear-room" onClick={handleclear}>Clear Room</button>
     </div>
   );
 };
 
-export default Body;
+export default Room;

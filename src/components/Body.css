@@ -36,3 +36,16 @@ button{
     right: 26%;
     cursor: pointer;
 }
+
+.create-room-btn{
+  color: white;
+  background-color: #f21212;
+  font-weight: bold;
+  font-size: 15px;
+  width: 10%;
+  position: absolute;
+  bottom: 20%;
+  right: 20%;
+  cursor: pointer;
+
+}
