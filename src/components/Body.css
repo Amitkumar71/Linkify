@@ -4,18 +4,20 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  background-color: rgb(160, 132, 232);
 }
 
 .drop-zone {
-  border: 2px dashed black;
+  border: 2px dashed white;
   width: 600px;
+  color: white;
   height: 300px;
   margin: 20px auto;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  box-shadow: 10 10px 10px 2px rgba(234, 7, 7, 0.2);
+  /* box-shadow: 10 10px 10px 2px rgba(234, 7, 7, 0.2); */
 }
 
 .file-input-label {
@@ -32,9 +34,8 @@ button{
     font-size: 15px;
     width: 10%;
     position: absolute;
-    bottom: 25%;
-    right: 26%;
     cursor: pointer;
+    border-radius: 10px;
 }
 
 .create-room-btn{
@@ -43,9 +44,8 @@ button{
   font-weight: bold;
   font-size: 15px;
   width: 10%;
+  top: 18%;
   position: absolute;
-  bottom: 20%;
-  right: 20%;
   cursor: pointer;
 
 }

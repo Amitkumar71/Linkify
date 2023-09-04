@@ -46,10 +46,10 @@ const Room = () => {
   };
 
   return (
-    <div className="body-container">
+    <div className="room-container">
       <h2>Second Space</h2>
       <div
-        className={`drop-zone ${dragging ? 'dragging' : ''}`}
+        className={`room-drop-zone ${dragging ? 'dragging' : ''}`}
         onDragEnter={handleDragEnter}
         onDragOver={handleDragOver}
         onDragLeave={handleDragLeave}
