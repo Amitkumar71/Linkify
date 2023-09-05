@@ -102,7 +102,7 @@ const Body = () => {
           id="fileInput"
         />
       </div>
-      <button onClick={handleClear}>Clear</button>
+      <button className="clear" onClick={handleClear}>Clear</button>
       <button className="create-room-btn" onClick={handleToggleMode}>
         {isCreateMode ? 'Create Room' : 'Delete Room'}
       </button>

@@ -47,7 +47,7 @@ const Room = () => {
 
   return (
     <div className="room-container">
-      <h2>Second Space</h2>
+      <h2>Colaborative  Space</h2>
       <div
         className={`room-drop-zone ${dragging ? 'dragging' : ''}`}
         onDragEnter={handleDragEnter}

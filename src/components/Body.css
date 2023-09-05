@@ -26,7 +26,7 @@
     cursor: pointer;
 }
 
-button{
+.clear{
     color: white;
     background-color: #f21212;
     font-weight: bold;
