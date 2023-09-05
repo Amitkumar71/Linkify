@@ -29,7 +29,7 @@ const Room = () => {
 
   const handleFileInputClick = () => {
     // Trigger the file input when the drag zone is clicked
-    document.getElementById('fileInput').click();
+    document.getElementById('roomInput').click();
   };
 
   const handleFileInputChange = (e) => {
@@ -87,7 +87,7 @@ const Room = () => {
           accept=".pdf,.doc,.docx,.jpg,.jpeg,.png,.gif,.mp4,.mov"
           onChange={handleFileInputChange}
           style={{ display: 'none' }}
-          id="fileInput"
+          id="roomInput"
         />
       </div>
       <button className="clear-room" onClick={handleclear}>Clear Room</button>
