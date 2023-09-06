@@ -4,7 +4,6 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  background-color: rgb(160, 132, 232);
 }
 
 .drop-zone {
@@ -46,5 +45,5 @@
   top: 18%;
   position: absolute;
   cursor: pointer;
-
+  border-radius: 10px;
 }

@@ -1,10 +1,13 @@
 /* Body.css (or use a CSS-in-JS solution) */
+$primary:rgb(160, 132, 232);
+$secondary:rgb(167, 130, 149);
+
 .room-container {
     text-align: center;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    background-color: rgb(167, 130, 149);
+    background-color: $secondary;
   }
   
   .room-drop-zone {

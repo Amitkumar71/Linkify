@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './Room.css';
+import './Room.scss';
 
 const Room = () => {
   const [dragging, setDragging] = useState(false);
