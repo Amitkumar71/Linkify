@@ -3,14 +3,15 @@ $secondary:rgb(167, 130, 149);
 
 .App {
   text-align: center;
-    background-color: $primary;
+  background-color: $primary;
+
+  .branding{
+    font-size: 20px;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+    color: white;
+    background-color: black;
+  }
 }
 
-.branding{
-  font-size: 20px;
-  font-weight: bold;
-  display: flex;
-  justify-content: left;
-  color: white;
-  background-color: black;
-}

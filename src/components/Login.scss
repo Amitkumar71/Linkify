@@ -6,18 +6,8 @@
   height: 700px;
   width:100%;
   color:  white;
-}
 
-.start{
-    color: white;
-    background-color: green;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-    border-radius: 10px;
-}
-
-.login-body{
+  .login-body{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,9 +19,19 @@
     color: white;
     background-color: red;
     box-shadow: 5px 5px 5px black;
-}
 
-.login-body input{
-    height: 20px;
-    border-radius: 5px;
+    .start{
+        color: white;
+        background-color: green;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    
+    .login-body input{
+        height: 20px;
+        border-radius: 5px;
+    }
+  }
 }
